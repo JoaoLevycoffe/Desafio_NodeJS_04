@@ -37,7 +37,30 @@ app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`);
 
 
-	// CÓDIGO PARA ATENDER OS REQUERIMENTOS
-	// R01, R02, R03, R04, R05
+	class Aluno {
+		nome: string;
+		idade: number;
+		nota: number;
+		constructor(nome: string, idade: number, nota: number) {
+			this.nome = nome
+			this.idade = idade
+			this.nota = nota
+			
+		}
+	
+	}
+
+	let a1 =  new Aluno ('Lendro', 26, 8)
+	let a2 = new Aluno ('Luana', 29, 7)
+	let a3 = new Aluno ('Lais', 30, 10)
+
+	let alunos:Array<Aluno> = [
+		{nome: 'Leandro', idade: 26, nota: 8},
+		{nome: 'Luana', idade: 28, nota: 7},
+		{nome: 'Lais', idade: 30, nota: 10}
+	];
+
+	let soma = [8 + 7 + 10]
+	console.log(soma)
 	
 });
